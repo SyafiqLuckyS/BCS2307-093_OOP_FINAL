@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Outdoor Activity Checklist</title>
+    <link rel="stylesheet" href="crud.css">
+</head>
+<body>
+    <div class="overlay"></div>
+    <div class="header">
+        <h1>Weather Forecast & Activity Suggestions</h1>
+        <p>Plan your activities with the right equipment based on weather conditions.</p>
+    </div>
+    <div class="wrapper">
+        <div class="mainWrapper">
+            <h1 class="main-title">Outdoor Activity Checklist</h1>
+            <form>
+                <div class="form-group">
+                    <label for="fileName">Activity Name</label>
+                    <input id="fileName" type="text" class="form-control" placeholder="Enter activity name">
+                </div>
+                <div class="form-group">
+                    <label for="fileContents">Required Equipment</label>
+                    <textarea id="fileContents" class="form-control" rows="15" placeholder="Enter required equipment"></textarea>
+                </div>
+                <div class="button-group">
+                    <button type="button" id="btnCreate" class="btn btn-default">Create</button>
+                    <button type="button" id="btnRead" class="btn btn-default">Read</button>
+                    <button type="button" id="btnUpdate" class="btn btn-default">Update</button>
+                    <button type="button" id="btnDelete" class="btn btn-default">Delete</button>
+                </div>
+            </form>
+        </div>
+
+        <div class="existing-files-wrapper">
+            <h2>Existing Activities</h2>
+            <br>
+            <button class="btn btn-home" onclick="window.location.href='search.html'">Home Page</button>
+            <table id="fileTable" class="file-table">
+                <thead>
+                    <tr>
+                        <th>Activities Name</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- activities -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2024 Outdoor Activity Checklist. All rights reserved.</p>
+    </footer>
+    <script src="crud.js"></script>
+</body>
+</html>

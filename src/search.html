@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather & Activities</title>
+    <link rel="stylesheet" href="search.css">
+</head>
+<body onload="buttonClicked()">
+    <div class="overlay"></div>
+    <div class="header">
+        <h1>Weather Forecast & Activity Suggestions</h1>
+        <p>Find the best activities based on your location's weather.</p>
+    </div>
+
+    <div class="main-content">
+        <div class="search-container">
+            <input type="text" id="city_input" placeholder="Enter City" value="Kuala Lumpur">
+            <button onclick="buttonClicked()">Search</button>
+            <button onclick="window.location.href='crud.html'">Activity Checklist</button>
+        </div>
+
+        <div class="weather-container">
+            <div class="weather-info left">
+                <h2>Temperature in <span id="title2"></span></h2>
+                <div class="weather-details">
+                    <p id="main5"></p>
+                    <p id="main6"></p>
+                    <p id="main8"></p>
+                    <p id="main9"></p>
+                </div>
+            </div>
+
+            <div class="weather-info center">
+                <h2><span id="title1"></span></h2>
+                <div class="weather-details">
+                    <div id="main7" class="icon"></div>
+                    <p id="main1"></p>
+                    <p id="main2"></p>
+                    <p id="main3"></p>
+                    <p id="main4"></p>
+                </div>
+            </div>
+
+            <div class="weather-info right">
+                <h2>Weather Condition in <span id="title3"></span></h2>
+                <div class="weather-details">
+                    <p id="main10"></p>
+                    <p id="main11"></p>
+                    <p id="main12"></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="activities">
+            <h2>Recommended Activities</h2>
+            <div class="activity-list" id="activity-list"></div>
+        </div>
+    </div>
+    
+    <footer>
+        <p>&copy; 2024 Weather Forecast. All rights reserved.</p>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>
